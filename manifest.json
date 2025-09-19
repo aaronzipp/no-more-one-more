@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Friction MVP",
+  "version": "0.1",
+  "description": "Adds friction after an episode ends.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["*://*.netflix.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Netflix Friction Settings"
+  }
+}
+
