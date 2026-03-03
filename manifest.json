@@ -1,7 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Netflix Friction MVP",
+  "name": "NoMoreOneMore",
   "version": "0.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@no-more-one-more",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "description": "Adds friction after an episode ends.",
   "permissions": ["activeTab", "storage"],
   "host_permissions": ["*://*.netflix.com/*"],
@@ -14,7 +22,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Netflix Friction Settings"
+    "default_title": "Settings"
   }
 }
 
